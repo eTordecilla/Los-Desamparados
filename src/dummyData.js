@@ -1,0 +1,226 @@
+export const userData = [
+  {
+    name: "Ene",
+    "Ventas realizadas": 4000,
+  },
+  {
+    name: "Feb",
+    "Ventas realizadas": 3000,
+  },
+  {
+    name: "Mar",
+    "Ventas realizadas": 2000,
+  },
+  {
+    name: "May",
+    "Ventas realizadas": 2780,
+  },
+  {
+    name: "Jun",
+    "Ventas realizadas": 1890,
+  },
+  {
+    name: "Jul",
+    "Ventas realizadas": 2390,
+  },
+  {
+    name: "Ago",
+    "Ventas realizadas": 3490,
+  },
+  {
+    name: "Sep",
+    "Ventas realizadas": 2780,
+  },
+  {
+    name: "Oct",
+    "Ventas realizadas": 1890,
+  },
+  {
+    name: "Nov",
+    "Ventas realizadas": 2390,
+  },
+  {
+    name: "Dic",
+    "Ventas realizadas": 3490,
+  },
+];
+export const productData = [
+  {
+    name: "Ene",
+    Sales: 1,
+  },
+  {
+    name: "Feb",
+    Sales: 5,
+  },
+  {
+    name: "Mar",
+    Sales: 6,
+  },
+];
+
+export const userRows = [
+  {
+    id: 1,
+    username: "Juan Perez",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$120.00",
+  },
+  {
+    id: 2,
+    username: "Alexa Gutierrez",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$120.00",
+  },
+  {
+    id: 3,
+    username: "Pedro Perez",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$1.300.000",
+  },
+  {
+    id: 4,
+    username: "Cristian Martin",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$1.200.000",
+  },
+  {
+    id: 5,
+    username: "Ana Sanchez",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$150.000",
+  },
+  {
+    id: 6,
+    username: "Vicky Doria",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$1.300.000",
+  },
+  {
+    id: 7,
+    username: "Augusto Suarez",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$150.000",
+  },
+  {
+    id: 8,
+    username: "Juana de Arco",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$500.000",
+  },
+  {
+    id: 9,
+    username: "Yesica Yuyeimi",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$1.000",
+  },
+  {
+    id: 10,
+    username: "Covid Manuel",
+    avatar: "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+    email: "user@gmail.com",
+    status: "activo",
+    transaction: "$666.000",
+  },
+];
+
+export const productRows = [
+  {
+    id: 1,
+    name: "Celular iPhone 11 128 Gb - Gris",
+    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566960958082",
+    stock: 5,
+    status: "Disponible",
+    price: "$3.079.900",
+  },
+  {
+    id: 2,
+    name: "Celular Motorola One Action 128gb Azul",
+    img: "https://http2.mlstatic.com/D_NQ_NP_625367-MCO42235208774_062020-O.webp",
+    stock: 7,
+    status: "Disponible",
+    price: "$759.900",
+  },
+  {
+    id: 3,
+    name: "Celular iPhone 11 128 Gb - Gris",
+    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566960958082",
+    stock: 5,
+    status: "Disponible",
+    price: "$3.079.900",
+  },
+  {
+    id: 4,
+    name: "Celular Motorola One Action 128gb Azul",
+    img: "https://http2.mlstatic.com/D_NQ_NP_625367-MCO42235208774_062020-O.webp",
+    stock: 0,
+    status: "Agotado",
+    price: "$759.900",
+  },
+  {
+    id: 5,
+    name: "Celular iPhone 11 128 Gb - Gris",
+    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566960958082",
+    stock: 5,
+    status: "Disponible",
+    price: "$3.079.900",
+  },
+  {
+    id: 6,
+    name: "Celular Motorola One Action 128gb Azul",
+    img: "https://http2.mlstatic.com/D_NQ_NP_625367-MCO42235208774_062020-O.webp",
+    stock: 7,
+    status: "Disponible",
+    price: "$759.900",
+  },
+  {
+    id: 7,
+    name: "Celular iPhone 11 128 Gb - Gris",
+    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566960958082",
+    stock: 5,
+    status: "Disponible",
+    price: "$3.079.900",
+  },
+  {
+    id: 8,
+    name: "Celular Motorola One Action 128gb Azul",
+    img: "https://http2.mlstatic.com/D_NQ_NP_625367-MCO42235208774_062020-O.webp",
+    stock: 0,
+    status: "Agotado",
+    price: "$759.900",
+  },
+  {
+    id: 9,
+    name: "Celular iPhone 11 128 Gb - Gris",
+    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566960958082",
+    stock: 5,
+    status: "Disponible",
+    price: "$3.079.900",
+  },
+  {
+    id: 10,
+    name: "Celular Motorola One Action 128gb Azul",
+    img: "https://http2.mlstatic.com/D_NQ_NP_625367-MCO42235208774_062020-O.webp",
+    stock: 7,
+    status: "Disponible",
+    price: "$759.900",
+  },
+];
