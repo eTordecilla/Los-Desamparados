@@ -99,6 +99,77 @@ const loginUsuario = async(req, res = response) => {
     
 }
 
+const actualizarUsuario = async ( req, res = response) => {
+
+    const usuarioId = req.params.id;
+    const uid = req.uid;
+
+    try {
+
+        const usuario = await Usuario.findById( usuarioId );
+
+        if ( !usuario ) {
+            res.status(404).json({
+                ok: false,
+                msg: 'Usuario no existe por ese id'
+            });
+        }
+
+        const nuevoUsuario = { 
+            ...req.body,
+            usuario: uid
+        }
+
+        const usuarioActualizado = await Usuario.findByIdAndUpdate( usuarioId, nuevoUsuario, { new: true} );
+
+        res.json({
+            ok: true,
+            usuario: usuarioActualizado 
+        });
+        
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'Usuario no actualizado, hable con el administrador'
+        })
+    }
+}
+
+const eliminarUsuario = async ( req, res = response) => {
+
+    const usuarioId = req.params.id;
+    const uid = req.uid;
+
+    try {
+
+        const usuario = await Usuario.findById( usuarioId );
+
+        if ( !usuario ) {
+            return res.status(404).json({
+                ok: false,
+                msg: 'Usuario no existe por ese id'
+            });
+        }
+
+        await Usuario.findByIdAndDelete( usuarioId );
+
+        res.json({ 
+            ok: true,
+            msg: `Usuario con el id: ${uid} ha sido eliminado`
+        });
+
+        
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'Hable con el administrador'
+        });
+    }
+
+}
+
 const revalidarToken = async (req, res = response ) => {
 
     const { uid, name } = req;
@@ -115,5 +186,7 @@ const revalidarToken = async (req, res = response ) => {
 module.exports = {
     crearUsuario,
     loginUsuario,
+    actualizarUsuario,
+    eliminarUsuario,
     revalidarToken
 };

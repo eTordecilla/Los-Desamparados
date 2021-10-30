@@ -7,7 +7,7 @@ const { check } = require('express-validator');
 
 const { isDate } = require('../helpers/isDate');
 const { validarCampos } = require('../middlewares/validar-campos');
-const { crearUsuario, loginUsuario, revalidarToken } = require('../controllers/auth');
+const { crearUsuario, loginUsuario, actualizarUsuario, eliminarUsuario, revalidarToken } = require('../controllers/auth');
 const { validarJWT } = require('../middlewares/validar-jwt');
 
 
@@ -36,6 +36,10 @@ router.post(
     ],
     loginUsuario 
 );
+
+router.put('/:id', actualizarUsuario);
+
+router.delete('/:id', eliminarUsuario);
 
 
 router.get('/renew', validarJWT ,revalidarToken );
