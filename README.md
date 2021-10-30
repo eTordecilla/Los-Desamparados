@@ -12,10 +12,23 @@ ejecutar el comando npm run dev para ejecutar el proceso del back en el puerto 3
 Usuario: edta.1993@gmail.com
 password: 123456
 
-para verificar los metodos GET y POST
+Usuario: edta.1993@hotmail.com
+password: 123456
+
+para verificar los metodos GET y POST rutas de Usuario:
 
 GET localhost:3002/api/auth/renew - para revalidar el JWT
 
 POST localhost:3002/api/auth - Login de Usuario
 
 POST localhost:3002/api/auth/new - Creación de usuario
+
+RUTA PRODUCTOS:
+
+GET localhost:3002/api/productos - Obtenemos la lista de los productos
+
+POST localhost:3002/api/productos - Insertar un nuevo productos
+
+PUT localhost:3002/api/productos - ACtualizar un producto (solo lo puede hacer el usuario que lo creó)
+
+DELETE localhot:3002/api/productos/URL_DEL_PRODUCTO - Eliminar producto

@@ -95,14 +95,7 @@ const loginUsuario = async(req, res = response) => {
             ok: false,
             msg: 'Por favor hable con el administrador'
         })
-    }   
-    
-    res.status(201).json({
-        ok: true,
-        msg: 'login',
-        email, 
-        password
-    })
+    }
     
 }
 
