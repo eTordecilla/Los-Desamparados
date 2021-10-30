@@ -9,10 +9,10 @@ en el archivo .env estan las instrucciones para la db
 
 ejecutar el comando npm run dev para ejecutar el proceso del back en el puerto 3002
 
-Usuario: edta.1993@gmail.com
+Usuario: correo_1@gmail.com
 password: 123456
 
-Usuario: edta.1993@hotmail.com
+Usuario: prueba_2@hotmail.com
 password: 123456
 
 para verificar los metodos GET y POST rutas de Usuario:
@@ -31,4 +31,4 @@ POST localhost:3002/api/productos - Insertar un nuevo productos
 
 PUT localhost:3002/api/productos - ACtualizar un producto (solo lo puede hacer el usuario que lo creó)
 
-DELETE localhot:3002/api/productos/URL_DEL_PRODUCTO - Eliminar producto
+DELETE localhot:3002/api/productos/ID_DEL_PRODUCTO - Eliminar producto
