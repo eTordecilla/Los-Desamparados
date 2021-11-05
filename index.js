@@ -23,6 +23,7 @@ app.use( express.json() );
 // RUTAS
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/productos', require('./routes/productos'));
+app.use('/api/ventas', require('./routes/ventas'))
 // TODO: CRUD: Eventos
 
 
