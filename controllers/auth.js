@@ -102,6 +102,7 @@ const loginUsuario = async(req, res = response) => {
 const actualizarUsuario = async ( req, res = response) => {
 
     const usuarioId = req.params.id;
+    const password = req.body.password;
     const uid = req.uid;
 
     try {
@@ -119,6 +120,11 @@ const actualizarUsuario = async ( req, res = response) => {
             ...req.body,
             usuario: uid
         }
+
+        //ENCRIPTAR CONTRASEÑA 
+
+        const salt = bcrypt.genSaltSync();
+        nuevoUsuario.password = bcrypt.hashSync( password, salt );
 
         const usuarioActualizado = await Usuario.findByIdAndUpdate( usuarioId, nuevoUsuario, { new: true} );
 
